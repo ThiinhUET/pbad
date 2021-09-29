@@ -1,12 +1,5 @@
 """
 pattern-based anomaly detection
-
-authors: Len Feremans
-created: 8 May 2019
-
-Subset of PBAD that does not compute patterns and only computes embedding of patterns,
-and anomaly score.  Used for integration with TIPM: A tool voor Interactive time series 
-pattern mining and anomaly detection. (https://bitbucket.org/len_feremans/tipm_pub).
 """
 
 import sys, os, time, math
@@ -15,8 +8,8 @@ import numpy as np
 
 from sklearn.ensemble import IsolationForest
 from collections import OrderedDict
-from utils.pattern_mining import mine_non_redundant_itemsets, mine_non_redundant_sequential_patterns
-from utils.make_features import make_pattern_based_features
+from ..utils.pattern_mining import mine_non_redundant_itemsets, mine_non_redundant_sequential_patterns
+from ..utils.make_features import make_pattern_based_features
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

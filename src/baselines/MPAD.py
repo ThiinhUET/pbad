@@ -3,17 +3,6 @@ pattern-based anomaly detection
 -------------------------------
 Matrixe Profile Anomaly Detection.
 
-Reference:
-    Yeh, C. C. M., Zhu, Y., Ulanova, L., Begum, N., Ding, Y., Dau, H. A., Keogh, E. (2016, December).
-    Matrix profile I: all pairs similarity joins for time series: a unifying view that includes motifs, discords and shapelets.
-    In Data Mining (ICDM), 2016 IEEE 16th International Conference on (pp. 1317-1322). IEEE.
-
-:authors: Vincent Vercruyssen & Len Feremans
-:copyright:
-    Copyright 2019 KU Leuven, DTAI Research Group.
-    Copyright 2019 UAntwerpen, ADReM Data Lab.
-:license:
-
 """
 
 import sys, os, time, math

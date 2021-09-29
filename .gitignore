@@ -20,3 +20,4 @@ src/compile_results/
 data/univariate/colruyt_*
 results/
 .vscode/
+.idea/*

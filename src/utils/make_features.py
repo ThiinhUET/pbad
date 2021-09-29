@@ -1,6 +1,6 @@
 """
 Compute weighted occurrences:
-- We compute a 'soft' match between each row and each pattern, e.g.
+- compute a 'soft' match between each row and each pattern, e.g.
         the itemset pattern {'0.1','0.4'} matches exactly with the window  ['0.1','0.1','0.1','0.1','0.1' '0.4'], that is weight is 1.0
                                           if 'almost' matches with window  ['0.1','0.1','0.1','0.1','0.1' '0.3'], that is weight is 1.0 - 0.1 (distance of 0.4 and 0.3)
         for sequential patterns
@@ -12,7 +12,7 @@ import numpy as np
 try:
     from cython_utils import cpatternm as cpm
 except ImportError:
-    from utils.cython_utils import cpatternm as cpm
+    from src.utils.cython_utils import cpatternm as cpm
     # print('Loading CPATTERNM in PATTERN_MINING from TOP directory.')
 
 

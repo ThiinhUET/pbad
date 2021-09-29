@@ -8,12 +8,6 @@ Reference:
     Minimal infrequent pattern based approach for mining outliers in data streams.
     Expert Systems with Applications, 42(4), 1998-2012.
 
-:authors: Vincent Vercruyssen & Len Feremans
-:copyright:
-    Copyright 2019 KU Leuven, DTAI Research Group.
-    Copyright 2019 UAntwerpen, ADReM Data Lab.
-:license:
-
 """
 
 import sys, os, time, math
@@ -21,7 +15,7 @@ import pandas as pd
 import numpy as np
 
 from collections import Counter, OrderedDict
-from utils.pattern_mining import mine_minimal_infrequent_itemsets
+from src.utils.pattern_mining import mine_minimal_infrequent_itemsets
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

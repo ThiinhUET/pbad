@@ -1,26 +1,9 @@
-"""
-pattern-based anomaly detection
--------------------------------
-Frequent pattern outlier factor.
-
-Reference:
-    He, Z., Xu, X., Huang, Z. J., & Deng, S. (2005). FP-outlier: Frequent pattern based outlier detection.
-    Computer Science and Information Systems, 2(1), 103-118.
-
-:authors: Vincent Vercruyssen & Len Feremans
-:copyright:
-    Copyright 2019 KU Leuven, DTAI Research Group.
-    Copyright 2019 UAntwerpen, ADReM Data Lab.
-:license:
-
-"""
-
 import sys, os, time, math
 import pandas as pd
 import numpy as np
 
 from collections import Counter, OrderedDict
-from utils.pattern_mining import mine_non_redundant_itemsets
+from src.utils.pattern_mining import mine_non_redundant_itemsets
 
 try:
     from src.utils.cython_utils import cpatternm as cpm
@@ -29,7 +12,7 @@ except ImportError:
     dir_path = os.path.dirname(os.path.realpath(__file__))
     cython_path = dir_path.split('methods')[0]
     sys.path.insert(0, cython_path)
-    from utils.cython_utils import cpatternm as cpm
+    from ..utils.cython_utils import cpatternm as cpm
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -198,7 +181,6 @@ class FPOF:
                 if contained:
                     fpof += supports[j]
             fpof_score[i] = 1.0 - fpof / npa
-
         return fpof_score
 
     def _contains_pattern(self, x, pattern):
@@ -233,7 +215,5 @@ class FPOF:
             ts_lengths.append(len(v))
         if len(set(ts_lengths)) != 1:
             raise Exception('ERROR: each time series should have the same number of windows')
-
         self.nw = ts_lengths[0]
-
         return continuous_data, event_data

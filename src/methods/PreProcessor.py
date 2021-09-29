@@ -13,12 +13,6 @@ Preprocess the data:
     - discretize the data
     - bin and window the data
 
-:authors: Vincent Vercruyssen & Len Feremans
-:copyright:
-    Copyright 2019 KU Leuven, DTAI Research Group.
-    Copyright 2019 UAntwerpen, ADReM Data Lab.
-:license:
-
 """
 
 import sys, os, math

@@ -8,12 +8,6 @@ Reference:
     Multi-scale anomaly detection algorithm based on infrequent pattern of time series.
     Journal of Computational and Applied Mathematics, 214(1), 227-237.
 
-:authors: Vincent Vercruyssen & Len Feremans
-:copyright:
-    Copyright 2019 KU Leuven, DTAI Research Group.
-    Copyright 2019 UAntwerpen, ADReM Data Lab.
-:license:
-
 """
 
 import sys, os, time, math

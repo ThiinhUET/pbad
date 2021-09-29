@@ -1,7 +1,7 @@
 import os
 import numpy as np
-from pattern_mining_spmf import mine_closed_itemsets, mine_closed_sequential_patterns, mine_closed_sequential_patterns_CM_CLASP
-from pattern_mining_spmf import mine_maximal_itemsets, mine_minimal_infrequent_itemsets
+from .pattern_mining_spmf import mine_closed_itemsets, mine_closed_sequential_patterns, mine_closed_sequential_patterns_CM_CLASP
+from .pattern_mining_spmf import mine_maximal_itemsets, mine_minimal_infrequent_itemsets
 
 def test_mine_closed_itemsets():
     #dataset init

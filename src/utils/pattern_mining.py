@@ -2,7 +2,7 @@
 Mine itemsets or sequential patterns
 
 
-Remark: We could also encode each item as combination of hour + value
+Remark: could also encode each item as combination of hour + value
 
 relative_minsup = 0.001 #-> For Store 1
             #interpretation: value-hour occurs at least once every week
@@ -24,7 +24,7 @@ except ImportError:
 try:
     from cython_utils import cpatternm as cpm
 except ImportError:
-    from utils.cython_utils import cpatternm as cpm
+    from .cython_utils import cpatternm as cpm
     # print('Loading CPATTERNM in PATTERN_MINING from TOP directory.')
 
 

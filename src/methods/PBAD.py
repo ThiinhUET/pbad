@@ -2,13 +2,6 @@
 pattern-based anomaly detection
 -------------------------------
 Pattern-based anomaly detector.
-
-:authors: Vincent Vercruyssen & Len Feremans
-:copyright:
-    Copyright 2019 KU Leuven, DTAI Research Group.
-    Copyright 2019 UAntwerpen, ADReM Data Lab.
-:license:
-
 """
 
 import sys, os, time, math
@@ -18,8 +11,8 @@ import pickle
 
 from sklearn.ensemble import IsolationForest
 from collections import OrderedDict
-from utils.pattern_mining import mine_non_redundant_itemsets, mine_non_redundant_sequential_patterns
-from utils.make_features import make_pattern_based_features
+from src.utils.pattern_mining import mine_non_redundant_itemsets, mine_non_redundant_sequential_patterns
+from src.utils.make_features import make_pattern_based_features
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

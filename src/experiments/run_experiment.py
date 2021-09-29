@@ -1,13 +1,5 @@
 """
 Code to run an experiment
--------------------------
-
-:authors: Vincent Vercruyssen & Len Feremans
-:copyright:
-    Copyright 2019 KU Leuven, DTAI Research Group.
-    Copyright 2019 UAntwerpen, ADReM Data Lab.
-:license:
-
 """
 
 import sys, os, time, random
@@ -27,12 +19,12 @@ except Exception as e:
     print(e)
     sys.exit()
 
-from methods.PreProcessor import PreProcessor
-from methods.PBAD import PBAD
-from baselines.FPOF import FPOF
-from baselines.MPAD import MPAD
-from baselines.MIFPOD import MIFPOD
-from baselines.PAV import PAV
+from src.methods.PreProcessor import PreProcessor
+from src.methods.PBAD import PBAD
+from src.baselines.FPOF import FPOF
+from src.baselines.MPAD import MPAD
+from src.baselines.MIFPOD import MIFPOD
+from src.baselines.PAV import PAV
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
