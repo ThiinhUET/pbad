@@ -1,5 +1,5 @@
-from src.utils.casas_dataset import Casas
+from utils.casas_dataset import Casas
 
-casas = Casas()
-data = Casas.get_ann_features("hh101")
-print(data)
+casas = Casas("hh101")
+data = casas.get_ann_raw_dataframe()
+print(data.head(50))

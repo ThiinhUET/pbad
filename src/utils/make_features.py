@@ -12,7 +12,7 @@ import numpy as np
 try:
     from cython_utils import cpatternm as cpm
 except ImportError:
-    from src.utils.cython_utils import cpatternm as cpm
+    from utils.cython_utils import cpatternm as cpm
     # print('Loading CPATTERNM in PATTERN_MINING from TOP directory.')
 
 

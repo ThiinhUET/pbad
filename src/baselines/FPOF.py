@@ -3,16 +3,16 @@ import pandas as pd
 import numpy as np
 
 from collections import Counter, OrderedDict
-from src.utils.pattern_mining import mine_non_redundant_itemsets
+from utils.pattern_mining import mine_non_redundant_itemsets
 
 try:
-    from src.utils.cython_utils import cpatternm as cpm
+    from utils.cython_utils import cpatternm as cpm
 except ImportError:
     # TODO: make nice
     dir_path = os.path.dirname(os.path.realpath(__file__))
     cython_path = dir_path.split('methods')[0]
     sys.path.insert(0, cython_path)
-    from ..utils.cython_utils import cpatternm as cpm
+    from utils.cython_utils import cpatternm as cpm
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

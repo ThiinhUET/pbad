@@ -1,8 +1,4 @@
 """
-pattern-based anomaly detection
-
-authors: Len Feremans
-created: 8 May 2019
 
 Used for integration with TIPM: A tool voor Interactive time series 
 pattern mining and anomaly detection. (https://bitbucket.org/len_feremans/tipm_pub).

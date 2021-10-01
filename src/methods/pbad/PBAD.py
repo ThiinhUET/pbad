@@ -11,8 +11,8 @@ import pickle
 
 from sklearn.ensemble import IsolationForest
 from collections import OrderedDict
-from src.utils.pattern_mining import mine_non_redundant_itemsets, mine_non_redundant_sequential_patterns
-from src.utils.make_features import make_pattern_based_features
+from utils.pattern_mining import mine_non_redundant_itemsets, mine_non_redundant_sequential_patterns
+from utils.make_features import make_pattern_based_features
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

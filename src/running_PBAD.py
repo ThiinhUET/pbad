@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
-from src.methods.PreProcessor import PreProcessor
-from src.methods.PBAD import PBAD
+from methods.PreProcessor import PreProcessor
+from methods.PBAD import PBAD
 
 # Univariate input file has three columns: timestamp, value and label.
 # Label is either 0=unknown, 1=normal or -1=abnormal
